@@ -1,0 +1,13 @@
+opam-version: "1.2"
+tags: [ "benchmark" ]
+maintainer: "Philippe Veber <philippe.veber@gmail.com>"
+build: [
+  ["wget" "http://biocaml.org/test-data-flambda/reads.sam"]
+  ["wget" "http://biocaml.org/test-data-flambda/reads.bam"]
+]
+depends: [ "biocaml" {= "dev"} ]
+substs: [
+  "biocaml_bamcount_imp.bench"
+  "biocaml_samcount_imp.bench"
+  "biocaml_samcount_tfm.bench"
+]

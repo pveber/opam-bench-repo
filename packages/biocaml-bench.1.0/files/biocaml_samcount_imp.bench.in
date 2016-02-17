@@ -1,0 +1,6 @@
+((name biocaml-samcount-imp)
+ (descr "Sam file parsing with imperative style")
+ (cmd (%{bin}%/biocaml-run-benchmarks samcount -mode sam %{biocaml-bench:share}%/reads.sam))
+ (file_check
+   (("%{biocaml-bench:share}%/bam-count.result" "$OUTPUT$")))
+ (speed Slower))

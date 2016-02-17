@@ -1,0 +1,6 @@
+((name biocaml-samcount-tfm)
+ (descr "Sam file parsing with passive buffered transforms")
+ (cmd (%{bin}%/biocaml-run-benchmarks samcount -mode transform %{biocaml-bench:share}%/reads.sam))
+ (file_check
+   (("%{biocaml-bench:share}%/bam-count.result" "$OUTPUT$")))
+ (speed Slower))

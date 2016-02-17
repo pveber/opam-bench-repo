@@ -1,0 +1,8 @@
+share: [
+  "biocaml_bamcount_imp.bench"
+  "biocaml_samcount_imp.bench"
+  "biocaml_samcount_tfm.bench"
+  "biocaml_bamcount.output"
+  "reads.sam"
+  "reads.bam"
+]
